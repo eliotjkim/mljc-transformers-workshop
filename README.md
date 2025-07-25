@@ -39,3 +39,11 @@
 
 ## Ozone Dataset Details
 
+`data/mljc_workshop_o3_L25.nc` 
+- 2019 global GEOS-Chem ozone concentrations (mol / mol) 
+- 3-hourly time-steps, $4^o$ by $5^o$ resolution
+- Model Level 25 (~350-400 hPa)
+
+**Training Task:** Predict ozone concentration patch (11 by 12 grid cells, 24 total global patches) for the next time-step given N prior patches. Each input sequence of patches includes 100 time-steps (~12.5 days). 
+
+Disclaimer: no domain knowledge was applied in the making of this training dataset. 
