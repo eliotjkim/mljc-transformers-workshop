@@ -36,3 +36,6 @@
     - This one is all you need for most of the time, to achieve the same structure as "Attention is all you need" paper
   - `memory_mask`: The first attention mask on the decoder side in the cross-attention block.
 - In our example, we shifted the sample manually on the `def forward()` function. We are not sure if it's standard practice. 
+
+## Ozone Dataset Details
+
