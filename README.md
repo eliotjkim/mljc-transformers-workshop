@@ -37,7 +37,7 @@
   - `memory_mask`: The first attention mask on the decoder side in the cross-attention block.
 - In our example, we shifted the sample manually on the `def forward()` function. We are not sure if it's standard practice. 
 
-## Ozone Dataset Details
+## Ozone Dataset and Training Details
 
 `data/mljc_workshop_o3_L25.nc` 
 - 2019 global GEOS-Chem ozone concentrations (mol / mol) 
@@ -45,5 +45,6 @@
 - Model Level 25 (~350-400 hPa)
 
 **Training Task:** Predict ozone concentration patch (11 by 12 grid cells, 24 total global patches) for the next time-step given N prior patches. Each input sequence of patches includes 100 time-steps (~12.5 days). 
+- On GitHub Codespace with 2-core CPU, each epoch takes 10-15 seconds for a batch size of 64.
 
 Disclaimer: no domain knowledge was applied in the making of this training dataset. 
