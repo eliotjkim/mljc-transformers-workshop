@@ -1,1 +1,1 @@
-# mljc-transformers-workshop
+# MLJC Transformers Workshop
