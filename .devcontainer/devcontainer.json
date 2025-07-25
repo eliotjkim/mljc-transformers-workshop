@@ -1,4 +1,0 @@
-{
-  "name": "My Python Dev Env",
-  "postCreateCommand": "python -m venv .ozonevenv && source .ozonevenv/bin/activate && pip install -r ot_requirement.txt"
-}
